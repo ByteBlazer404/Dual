@@ -1,0 +1,84 @@
+:root {
+    --color-fondo-principal: #ffffff;
+    --color-fondo-secundario: #e8ecee;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo-secundario);
+}
+
+.login-button {
+    background-color: #9B9CA0;
+    border: none;
+    color: #ffff;
+    box-shadow: 0px 3px 5px 0px #0000004D;
+    transition: box-shadow 0.3s ease;
+    height: 3rem;
+}
+
+.login-button:hover,
+.login-button:focus {
+    color: #ffff;
+    background-color: #000000;
+    box-shadow: 0px 6px 10px 0px #00000080;
+}
+
+.login-input {
+    border: 2px solid #B0B0B0;
+    height: 3rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input:hover {
+    border-color: #808080;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.login-input::placeholder {
+    color: #808080;
+}
+
+.login-input:focus {
+    border-color: #000000;
+}
+.password-button {
+    background-color: #9B9CA0;
+    border: none;
+    color: #ffff;
+    box-shadow: 0px 3px 5px 0px #0000004D;
+    transition: box-shadow 700ms ease;
+    height: 3rem;
+}
+
+.password-button:hover,
+.password-button:focus {
+    color: #ffff;
+    background-color: #000000;
+    box-shadow: 0px 6px 10px 0px #00000080;
+}
+
+.password-input {
+    border: 2px solid #B0B0B0;
+    height: 3rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.password-input:hover {
+    border-color: #7B7979;
+    box-shadow: 0px 0px 10px 0px 75D8CD;
+}
+
+.password-input:focus {
+    border-color: #505050;
+    box-shadow: 0px 0px 10px 0px F02A12;
+}
+
+                                                                                                                                                                                                 Puedes ajustar los valores de color, sombra y otros estilos según tus preferencias para obtener el efecto visual deseado. Asegúrate de incluir estas reglas CSS en tu archivo de estilos.
+
+
+
+
+
