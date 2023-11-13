@@ -3,7 +3,7 @@ package com.example.listaUser.Metodos;
 public class roles {
     private String nombre;
     private String description;
-    private int id;
+    private long id;
     public String getNombre() {
         return nombre;
     }
@@ -20,15 +20,17 @@ public class roles {
         this.description = description;
     }
 
-    public int getId() {
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public roles(String nombre, String description , int id) {
+    public roles(String nombre, String description , long id) {
+        super();
         this.nombre = nombre;
         this.description = description;
         this.id = id;

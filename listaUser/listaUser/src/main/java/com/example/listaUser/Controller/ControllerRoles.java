@@ -1,6 +1,7 @@
 package com.example.listaUser.Controller;
 
 import com.example.listaUser.Metodos.roles;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +21,14 @@ public class ControllerRoles {
         model.addAttribute("rol", rol);
         return "lista";
     }
-    @RequestMapping(value = "/roles/lista/{id}" , method = RequestMethod.POST)
-    public String editarRol(@PathVariable Long id , @RequestBody roles rol) {
-        return "redirect:/roles/lista";
+    @RequestMapping(value = "/detalle-rol/{id}" , method = RequestMethod.GET)
+    public String modificar( @PathVariable long id){
+        long Id = id;
+        return "detalle-rol";
+    }
+    @RequestMapping(value = "/eliminar?{id}" , method = RequestMethod.GET)
+    public String liminar( @PathVariable long id) {
+        long Id = id;
+        return "redirect:/eliminar?"+ Id;
     }
 }
