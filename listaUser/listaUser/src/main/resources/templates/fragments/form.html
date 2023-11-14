@@ -1,0 +1,14 @@
+<div class="container-sm" th:fragment="form">
+    <form th:action="@{/nuevo-rol}" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Ingresa el rol</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion">
+        </div>
+        <input type="submit" class="btn btn-outline-primary">
+        <input type="reset" class="btn btn-outline-danger">
+    </form>
+</div>

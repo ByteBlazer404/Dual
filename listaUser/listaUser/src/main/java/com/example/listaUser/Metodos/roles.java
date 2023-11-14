@@ -1,5 +1,7 @@
 package com.example.listaUser.Metodos;
 
+import org.springframework.stereotype.Service;
+
 public class roles {
     private String nombre;
     private String description;
